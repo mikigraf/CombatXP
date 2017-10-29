@@ -1,0 +1,21 @@
+<GuiXml>
+  <Controls>
+    <TopLevelControl name="CombatXPIndicator" mouseEnabled="true" movable="true" clampedToScreen="true" hidden="true">
+      <Dimensions x="200" y="25" />
+      <Anchor point="BOTTOM" relativeTo="GuiRoot" relativePoint="TOP" offsetY="-20" />
+ 
+      <OnMoveStop>
+        CombatXP.OnIndicatorMoveStop()
+      </OnMoveStop>
+
+
+      <Controls>
+        <Label name="$(parent)Label" width="200" height="25" font="ZoFontWinH1" inheritAlpha="true" color="03c9e5"
+            wrapMode="TRUNCATE" verticalAlignment="CENTER" horizontalAlignment="CENTER" text="Exp!">
+          <Anchor point="TOP" relativeTo="$(parent)" relativePoint="TOP" />
+        </Label>
+      </Controls>
+    </TopLevelControl>
+  </Controls>
+</GuiXml>
+
